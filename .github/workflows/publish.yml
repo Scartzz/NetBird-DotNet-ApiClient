@@ -27,11 +27,11 @@ jobs:
     - name: Build
       run: dotnet build --configuration Release /p:Version=${VERSION}
     - name: Pack
-      run: dotnet pack --configuration Release /p:Version=${VERSION} 
+      run: dotnet pack --configuration Release /p:Version=${VERSION} --output .
     - name: NuGet login (OIDC → temp API key)
       uses: NuGet/login@v1
       id: login
       with:
         user: scartz
     - name: NuGet push
-      run: dotnet nuget push artifacts/NetBird.ApiClient.nupkg --api-key ${{steps.login.outputs.NUGET_API_KEY}} --source https://api.nuget.org/v3/index.json
+      run: dotnet nuget push NetBird.ApiClient.${VERSION}.nupkg --api-key ${{steps.login.outputs.NUGET_API_KEY}} --source https://api.nuget.org/v3/index.json
