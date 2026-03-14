@@ -1,6 +1,10 @@
 ﻿namespace NetBird.ApiClient;
 
-public interface INetBirdApiClient
+using NetBird.ApiClient.Models;
+
+public interface INetBirdApiClient : IAsyncDisposable, IDisposable
 {
+    void SetAccessToken(string accessToken);
     
+    Task<List<Peer>> GetPeers();
 }
