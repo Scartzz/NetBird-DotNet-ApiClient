@@ -1,8 +1,16 @@
-# NetBird.ApiClient - C# API Client for the NetBird API
+# NetBird.ApiClient - C# Client for the NetBird API
 
 API to manipulate groups, rules, policies and retrieve information about peers and users
 
-This API was originally created using OpenAPI Generator, but has since been heavily customized.
+This API was originally created using OpenAPI Generator, but has been heavily adjusted to fit better for modern C# Development.
+
+I am not affiliated with NetBird in any way. 
+I simply needed a NetBird API in C# for my personal and work related projects, which is why I created this library.
+If you encounter any issues, please feel free to open an issue.
+
+AI-generated slop issues will be closed without any comment.
+
+Thank you.
 
 # Installation
 
