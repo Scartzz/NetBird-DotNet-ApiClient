@@ -2,7 +2,7 @@
 
 API to manipulate groups, rules, policies and retrieve information about peers and users
 
-This API was originally created using OpenAPI Generator, but has been heavily adjusted to fit better for modern C# Development.
+This Client was originally created using OpenAPI Generator, but has been heavily adjusted to fit better for modern C# Development.
 
 I am not affiliated with NetBird in any way. 
 I simply needed a NetBird API in C# for my personal and work related projects, which is why I created this library.
